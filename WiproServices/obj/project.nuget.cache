@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "gEeEyNlForeTfP7zY21Kqe1qzt4rBvr2vmDQwoo1brBKOkgjnOh03YbEL4Z4PJBnNbub+6uSO/vpFu/7YWp3JQ==",
+  "dgSpecHash": "G1oj4tKNyVjXJ6IIIqg99/WK9UywbSL6PCstP6X5nbBCygWnh3zg1uCBnoO3l0pJCwh+J3jT7SpgUGItKR+L6w==",
   "success": true,
-  "projectFilePath": "C:\\Users\\lantoniode\\Desktop\\wipro\\WiproServices\\WiproServices\\WiproServices\\WiproServices.csproj",
+  "projectFilePath": "C:\\Users\\lantoniode\\Desktop\\wipro\\Finalizado\\WiproServices\\WiproServices\\WiproServices.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\lantoniode\\.nuget\\packages\\csvhelper\\16.2.0\\csvhelper.16.2.0.nupkg.sha512",
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",

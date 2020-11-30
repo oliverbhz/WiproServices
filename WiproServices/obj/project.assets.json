@@ -168,11 +168,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\lantoniode\\Desktop\\wipro\\WiproServices\\WiproServices\\WiproServices\\WiproServices.csproj",
+      "projectUniqueName": "C:\\Users\\lantoniode\\Desktop\\wipro\\Finalizado\\WiproServices\\WiproServices\\WiproServices.csproj",
       "projectName": "WiproServices",
-      "projectPath": "C:\\Users\\lantoniode\\Desktop\\wipro\\WiproServices\\WiproServices\\WiproServices\\WiproServices.csproj",
+      "projectPath": "C:\\Users\\lantoniode\\Desktop\\wipro\\Finalizado\\WiproServices\\WiproServices\\WiproServices.csproj",
       "packagesPath": "C:\\Users\\lantoniode\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\lantoniode\\Desktop\\wipro\\WiproServices\\WiproServices\\WiproServices\\obj\\",
+      "outputPath": "C:\\Users\\lantoniode\\Desktop\\wipro\\Finalizado\\WiproServices\\WiproServices\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

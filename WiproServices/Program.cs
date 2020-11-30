@@ -11,87 +11,11 @@ using WiproServices.Models;
 
 public class Example
 {
-
-	public List<(string ID_MOEDA, int COD_COTACAO)> tuples = new List<(string, int)>
-			{
-				("AFN", 66),
-				("ALL", 49 ),
-				("ANG", 33),
-				("ARS", 3 ),
-				("AWG", 6),
-				("BOB", 56 ),
-				("BYN", 64),
-				("CAD", 25 ),
-				("CDF", 58),
-				("CLP", 16 ),
-				("COP", 37),
-				("CRC", 52 ),
-				("CUP", 8),
-				("CVE", 51 ),
-				("CZK", 29),
-				("DJF", 36 ),
-				("DZD", 54),
-				("EGP", 12 ),
-				("EUR", 20),
-				("FJD", 38 ),
-				("GBP", 22),
-				("GEL", 48 ),
-				("GIP", 18),
-				("HTG", 63 ),
-				("ILS", 40),
-				("IRR", 17 ),
-				("ISK", 11),
-				("JPY", 9 ),
-				("KES", 21),
-				("KMF", 19 ),
-				("LBP", 42),
-				("LSL", 4 ),
-				("MGA", 35),
-				("MGB", 26 ),
-				("MMK", 69),
-				("MRO", 53 ),
-				("MRU", 15),
-				("MUR", 7 ),
-				("MXN", 41),
-				("MZN", 43 ),
-				("NIO", 23),
-				("NOK", 62 ),
-				("OMR", 34),
-				("PEN", 45 ),
-				("PGK", 2),
-				("PHP", 24 ),
-				("RON", 5),
-				("SAR", 44 ),
-				("SBD", 32),
-				("SGD", 70 ),
-				("SLL", 10),
-				("SOS", 61 ),
-				("SSP", 47),
-				("SZL", 55 ),
-				("THB", 39),
-				("TRY", 13 ),
-				("TTD", 67),
-				("UGX", 59 ),
-				("USD", 1),
-				("UYU", 46 ),
-				("VES", 68),
-				("VUV", 57 ),
-				("WST", 28),
-				("XAF", 30 ),
-				("XAU", 60),
-				("XDR", 27 ),
-				("XOF", 14),
-				("XPF", 50 ),
-				("ZAR", 65),
-				("ZWL", 31)
-			};
-
 	private static void Main()
 	{
 		while (Start())
 		{
-			//Thread.Sleep(120000);
-			Thread.Sleep(10000);
+			Thread.Sleep(120000);
 		}
 	}
 
@@ -162,7 +86,7 @@ public class Example
 
 			//1.2. Com a lista de moedas/datas, buscar todos os valores de cotação (vlr_cotacao) no arquivo DadosCotacao.csv utilizando o de-para descrito no item 4 (Tabela de de-para) para obter as cotações.
 
-			//var result = from e in ReadFileDepara()
+			//var groupJoinQuery0 = from e in ReadFileDepara()
 			//			 join d in ReadFIleDadosMoeda() on e.ID_MOEDA equals d.ID_MOEDA
 			//			 join c in ReadFileDadosCotacao() on e.COD_COTACAO equals c.COD_COTACAO
 			//			 into eGroup
@@ -171,8 +95,23 @@ public class Example
 			//			 {
 			//				 DATA_REF = d.DATA_REF,
 			//				 ID_MOEDA = d.ID_MOEDA,
-			//				 VLR_COTACAO = c.VLR_COTACAO
+			//				 VLR_COTACAO = d.ID_MOEDA
 			//			 };
+
+			//var groupJoinQuery1 =
+			//	from c in listDepara
+			//	join p in listDadosCotacao on c.COD_COTACAO equals p.COD_COTACAO into prodGroup
+			//	from pc in prodGroup
+			//	orderby pc.COD_COTACAO
+			//	select new { VLR_COTACAO = pc.VLR_COTACAO, ID_MOEDA = c.ID_MOEDA };
+
+
+			//var groupJoinQuery2 =
+			//	from c in listMoedasDatas
+			//	join p in groupJoinQuery1 on c.ID_MOEDA equals p.ID_MOEDA into prodGroup
+			//	from pc in prodGroup
+			//	orderby pc.ID_MOEDA
+			//	select new { ID_MOEDA = c.ID_MOEDA, DATA_REF = c.DATA_REF, VLR_COTACAO = pc.VLR_COTACAO };
 
 
 			WriteFileCSV(listMoedasDatas);
